@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,51,0" name="NewLanguage.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/208653575767362746">
+    <file name="VarReference_Constraints.java">
+      <node id="208653575767362746" at="19,37,20,36" concept="9" />
+      <node id="208653575767407182" at="28,56,29,182" concept="6" />
+      <node id="208653575767362746" at="31,6,32,131" concept="5" />
+      <node id="208653575767407182" at="32,131,33,42" concept="2" />
+      <node id="208653575767362746" at="33,42,34,22" concept="6" />
+      <node id="208653575767362746" at="38,0,39,0" concept="7" trace="VarReference$Jg" />
+      <node id="208653575767362746" at="39,0,40,0" concept="7" trace="IVariable$So" />
+      <node id="208653575767362746" at="43,0,44,0" concept="7" trace="var$iTQl" />
+      <node id="208653575767362746" at="19,0,22,0" concept="1" trace="VarReference_Constraints#()V" />
+      <node id="208653575767407182" at="26,0,31,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="208653575767407182" at="24,90,31,6" concept="5" />
+      <node id="208653575767362746" at="23,0,36,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="208653575767362746" at="19,37,20,36" />
+      <scope id="208653575767407182" at="28,56,29,182" />
+      <scope id="208653575767362746" at="19,0,22,0" />
+      <scope id="208653575767407182" at="26,0,31,0" />
+      <scope id="208653575767362746" at="24,90,34,22">
+        <var name="d0" id="208653575767407182" />
+        <var name="references" id="208653575767362746" />
+      </scope>
+      <scope id="208653575767362746" at="23,0,36,0" />
+      <unit id="208653575767362746" at="42,0,45,0" name="NewLanguage.constraints.VarReference_Constraints$LINKS" />
+      <unit id="208653575767362746" at="37,0,41,0" name="NewLanguage.constraints.VarReference_Constraints$CONCEPTS" />
+      <unit id="208653575767407182" at="25,48,31,5" name="NewLanguage.constraints.VarReference_Constraints$1" />
+      <unit id="208653575767362746" at="18,0,46,0" name="NewLanguage.constraints.VarReference_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/2409647083284896720">
+    <file name="FunctionReference_Constraints.java">
+      <node id="2409647083284896720" at="10,42,11,41" concept="9" />
+      <node id="2409647083284896720" at="15,0,16,0" concept="7" trace="FunctionReference$8E" />
+      <node id="2409647083284896720" at="10,0,13,0" concept="1" trace="FunctionReference_Constraints#()V" />
+      <scope id="2409647083284896720" at="10,42,11,41" />
+      <scope id="2409647083284896720" at="10,0,13,0" />
+      <unit id="2409647083284896720" at="14,0,17,0" name="NewLanguage.constraints.FunctionReference_Constraints$CONCEPTS" />
+      <unit id="2409647083284896720" at="9,0,18,0" name="NewLanguage.constraints.FunctionReference_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/2409647083304729283">
+    <file name="FieldAccessor_Constraints.java">
+      <node id="2409647083304729283" at="29,38,30,37" concept="9" />
+      <node id="4161913957872307954" at="41,63,42,126" concept="6" />
+      <node id="3169013597699825768" at="45,80,46,434" concept="6" />
+      <node id="2409647083304729283" at="50,6,51,131" concept="5" />
+      <node id="4161913957872307954" at="51,131,52,42" concept="2" />
+      <node id="2409647083304729283" at="52,42,53,22" concept="6" />
+      <node id="2409647083304729283" at="57,0,58,0" concept="7" trace="FieldAccessor$9x" />
+      <node id="2409647083304729283" at="58,0,59,0" concept="7" trace="IDotOperation$Lu" />
+      <node id="2409647083304729283" at="59,0,60,0" concept="7" trace="StructType$On" />
+      <node id="2409647083304729283" at="63,0,64,0" concept="7" trace="field$zJKq" />
+      <node id="2409647083304729283" at="64,0,65,0" concept="7" trace="operand$jw8a" />
+      <node id="2409647083304729283" at="65,0,66,0" concept="7" trace="structDec$QCZG" />
+      <node id="2409647083304729283" at="66,0,67,0" concept="7" trace="fields$lX8l" />
+      <node id="2409647083304729283" at="29,0,32,0" concept="1" trace="FieldAccessor_Constraints#()V" />
+      <node id="4161913957872307954" at="40,0,44,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4161913957872307954" at="44,0,48,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4161913957872307954" at="38,56,48,10" concept="6" />
+      <node id="4161913957872307954" at="36,0,50,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4161913957872307954" at="34,90,50,6" concept="5" />
+      <node id="2409647083304729283" at="33,0,55,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="2409647083304729283" at="29,38,30,37" />
+      <scope id="4161913957872307954" at="41,63,42,126" />
+      <scope id="4161913957872307954" at="45,80,46,434" />
+      <scope id="2409647083304729283" at="29,0,32,0" />
+      <scope id="4161913957872307954" at="40,0,44,0" />
+      <scope id="4161913957872307954" at="44,0,48,0">
+        <var name="_context" id="4161913957872307954" />
+      </scope>
+      <scope id="4161913957872307954" at="38,56,48,10" />
+      <scope id="4161913957872307954" at="36,0,50,0" />
+      <scope id="2409647083304729283" at="34,90,53,22">
+        <var name="d0" id="4161913957872307954" />
+        <var name="references" id="2409647083304729283" />
+      </scope>
+      <scope id="2409647083304729283" at="33,0,55,0" />
+      <unit id="2409647083304729283" at="56,0,61,0" name="NewLanguage.constraints.FieldAccessor_Constraints$CONCEPTS" />
+      <unit id="2409647083304729283" at="62,0,68,0" name="NewLanguage.constraints.FieldAccessor_Constraints$LINKS" />
+      <unit id="4161913957872307954" at="39,19,48,9" name="NewLanguage.constraints.FieldAccessor_Constraints$1$1" />
+      <unit id="4161913957872307954" at="35,48,50,5" name="NewLanguage.constraints.FieldAccessor_Constraints$1" />
+      <unit id="2409647083304729283" at="28,0,69,0" name="NewLanguage.constraints.FieldAccessor_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/3169013597703108686">
+    <file name="BreakStatement_Constraints.java">
+      <node id="3169013597703108686" at="18,39,19,38" concept="9" />
+      <node id="3169013597707297278" at="27,56,28,179" concept="6" />
+      <node id="3169013597703108686" at="30,6,31,131" concept="5" />
+      <node id="3169013597707297278" at="31,131,32,42" concept="2" />
+      <node id="3169013597703108686" at="32,42,33,22" concept="6" />
+      <node id="3169013597703108686" at="37,0,38,0" concept="7" trace="BreakStatement$O0" />
+      <node id="3169013597703108686" at="38,0,39,0" concept="7" trace="Label$2W" />
+      <node id="3169013597703108686" at="42,0,43,0" concept="7" trace="label$ZJao" />
+      <node id="3169013597703108686" at="18,0,21,0" concept="1" trace="BreakStatement_Constraints#()V" />
+      <node id="3169013597707297278" at="25,0,30,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="3169013597707297278" at="23,90,30,6" concept="5" />
+      <node id="3169013597703108686" at="22,0,35,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="3169013597703108686" at="18,39,19,38" />
+      <scope id="3169013597707297278" at="27,56,28,179" />
+      <scope id="3169013597703108686" at="18,0,21,0" />
+      <scope id="3169013597707297278" at="25,0,30,0" />
+      <scope id="3169013597703108686" at="23,90,33,22">
+        <var name="d0" id="3169013597707297278" />
+        <var name="references" id="3169013597703108686" />
+      </scope>
+      <scope id="3169013597703108686" at="22,0,35,0" />
+      <unit id="3169013597703108686" at="41,0,44,0" name="NewLanguage.constraints.BreakStatement_Constraints$LINKS" />
+      <unit id="3169013597703108686" at="36,0,40,0" name="NewLanguage.constraints.BreakStatement_Constraints$CONCEPTS" />
+      <unit id="3169013597707297278" at="24,48,30,5" name="NewLanguage.constraints.BreakStatement_Constraints$1" />
+      <unit id="3169013597703108686" at="17,0,45,0" name="NewLanguage.constraints.BreakStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/3169013597707560245">
+    <file name="ContinueStatement_Constraints.java">
+      <node id="3169013597707560245" at="18,42,19,41" concept="9" />
+      <node id="3169013597707560246" at="27,56,28,179" concept="6" />
+      <node id="3169013597707560245" at="30,6,31,131" concept="5" />
+      <node id="3169013597707560246" at="31,131,32,42" concept="2" />
+      <node id="3169013597707560245" at="32,42,33,22" concept="6" />
+      <node id="3169013597707560245" at="37,0,38,0" concept="7" trace="ContinueStatement$wm" />
+      <node id="3169013597707560245" at="38,0,39,0" concept="7" trace="Label$2W" />
+      <node id="3169013597707560245" at="42,0,43,0" concept="7" trace="label$LC_r" />
+      <node id="3169013597707560245" at="18,0,21,0" concept="1" trace="ContinueStatement_Constraints#()V" />
+      <node id="3169013597707560246" at="25,0,30,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="3169013597707560246" at="23,90,30,6" concept="5" />
+      <node id="3169013597707560245" at="22,0,35,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="3169013597707560245" at="18,42,19,41" />
+      <scope id="3169013597707560246" at="27,56,28,179" />
+      <scope id="3169013597707560245" at="18,0,21,0" />
+      <scope id="3169013597707560246" at="25,0,30,0" />
+      <scope id="3169013597707560245" at="23,90,33,22">
+        <var name="d0" id="3169013597707560246" />
+        <var name="references" id="3169013597707560245" />
+      </scope>
+      <scope id="3169013597707560245" at="22,0,35,0" />
+      <unit id="3169013597707560245" at="41,0,44,0" name="NewLanguage.constraints.ContinueStatement_Constraints$LINKS" />
+      <unit id="3169013597707560245" at="36,0,40,0" name="NewLanguage.constraints.ContinueStatement_Constraints$CONCEPTS" />
+      <unit id="3169013597707560246" at="24,48,30,5" name="NewLanguage.constraints.ContinueStatement_Constraints$1" />
+      <unit id="3169013597707560245" at="17,0,45,0" name="NewLanguage.constraints.ContinueStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/3169013597712801585">
+    <file name="MethodAccessor_Constraints.java">
+      <node id="3169013597712801585" at="30,39,31,38" concept="9" />
+      <node id="7613513929793821004" at="42,63,43,126" concept="6" />
+      <node id="7613513929793830280" at="46,80,47,414" concept="6" />
+      <node id="3169013597712801585" at="51,6,52,131" concept="5" />
+      <node id="7613513929793821004" at="52,131,53,42" concept="2" />
+      <node id="3169013597712801585" at="53,42,54,22" concept="6" />
+      <node id="3169013597712801585" at="58,0,59,0" concept="7" trace="MethodAccessor$fy" />
+      <node id="3169013597712801585" at="59,0,60,0" concept="7" trace="IDotOperation$Lu" />
+      <node id="3169013597712801585" at="60,0,61,0" concept="7" trace="IHasMethods$11" />
+      <node id="3169013597712801585" at="64,0,65,0" concept="7" trace="method$CB4j" />
+      <node id="3169013597712801585" at="65,0,66,0" concept="7" trace="operand$jw8a" />
+      <node id="3169013597712801585" at="30,0,33,0" concept="1" trace="MethodAccessor_Constraints#()V" />
+      <node id="7613513929793821004" at="41,0,45,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="7613513929793821004" at="45,0,49,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7613513929793821004" at="39,56,49,10" concept="6" />
+      <node id="7613513929793821004" at="37,0,51,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7613513929793821004" at="35,90,51,6" concept="5" />
+      <node id="3169013597712801585" at="34,0,56,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="3169013597712801585" at="30,39,31,38" />
+      <scope id="7613513929793821004" at="42,63,43,126" />
+      <scope id="7613513929793821004" at="46,80,47,414" />
+      <scope id="3169013597712801585" at="30,0,33,0" />
+      <scope id="7613513929793821004" at="41,0,45,0" />
+      <scope id="7613513929793821004" at="45,0,49,0">
+        <var name="_context" id="7613513929793821004" />
+      </scope>
+      <scope id="7613513929793821004" at="39,56,49,10" />
+      <scope id="7613513929793821004" at="37,0,51,0" />
+      <scope id="3169013597712801585" at="35,90,54,22">
+        <var name="d0" id="7613513929793821004" />
+        <var name="references" id="3169013597712801585" />
+      </scope>
+      <scope id="3169013597712801585" at="34,0,56,0" />
+      <unit id="3169013597712801585" at="63,0,67,0" name="NewLanguage.constraints.MethodAccessor_Constraints$LINKS" />
+      <unit id="3169013597712801585" at="57,0,62,0" name="NewLanguage.constraints.MethodAccessor_Constraints$CONCEPTS" />
+      <unit id="7613513929793821004" at="40,19,49,9" name="NewLanguage.constraints.MethodAccessor_Constraints$1$1" />
+      <unit id="7613513929793821004" at="36,48,51,5" name="NewLanguage.constraints.MethodAccessor_Constraints$1" />
+      <unit id="3169013597712801585" at="29,0,68,0" name="NewLanguage.constraints.MethodAccessor_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/7613513929793863166">
+    <file name="MethodImplementation_Constraints.java">
+      <node id="7613513929793863166" at="25,45,26,44" concept="9" />
+      <node id="7613513929793863167" at="37,63,38,126" concept="6" />
+      <node id="7613513929793867047" at="41,80,42,232" concept="6" />
+      <node id="7613513929793863166" at="46,6,47,131" concept="5" />
+      <node id="7613513929793863167" at="47,131,48,42" concept="2" />
+      <node id="7613513929793863166" at="48,42,49,22" concept="6" />
+      <node id="7613513929793863166" at="53,0,54,0" concept="7" trace="MethodImplementation$WQ" />
+      <node id="7613513929793863166" at="54,0,55,0" concept="7" trace="StructDeclaration$PO" />
+      <node id="7613513929793863166" at="58,0,59,0" concept="7" trace="funcDec$t0Dl" />
+      <node id="7613513929793863166" at="25,0,28,0" concept="1" trace="MethodImplementation_Constraints#()V" />
+      <node id="7613513929793863167" at="36,0,40,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="7613513929793863167" at="40,0,44,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7613513929793863167" at="34,56,44,10" concept="6" />
+      <node id="7613513929793863167" at="32,0,46,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7613513929793863167" at="30,90,46,6" concept="5" />
+      <node id="7613513929793863166" at="29,0,51,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7613513929793863166" at="25,45,26,44" />
+      <scope id="7613513929793863167" at="37,63,38,126" />
+      <scope id="7613513929793863167" at="41,80,42,232" />
+      <scope id="7613513929793863166" at="25,0,28,0" />
+      <scope id="7613513929793863167" at="36,0,40,0" />
+      <scope id="7613513929793863167" at="40,0,44,0">
+        <var name="_context" id="7613513929793863167" />
+      </scope>
+      <scope id="7613513929793863167" at="34,56,44,10" />
+      <scope id="7613513929793863167" at="32,0,46,0" />
+      <scope id="7613513929793863166" at="30,90,49,22">
+        <var name="d0" id="7613513929793863167" />
+        <var name="references" id="7613513929793863166" />
+      </scope>
+      <scope id="7613513929793863166" at="29,0,51,0" />
+      <unit id="7613513929793863166" at="57,0,60,0" name="NewLanguage.constraints.MethodImplementation_Constraints$LINKS" />
+      <unit id="7613513929793863166" at="52,0,56,0" name="NewLanguage.constraints.MethodImplementation_Constraints$CONCEPTS" />
+      <unit id="7613513929793863167" at="35,19,44,9" name="NewLanguage.constraints.MethodImplementation_Constraints$1$1" />
+      <unit id="7613513929793863167" at="31,48,46,5" name="NewLanguage.constraints.MethodImplementation_Constraints$1" />
+      <unit id="7613513929793863166" at="24,0,61,0" name="NewLanguage.constraints.MethodImplementation_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/7613513929795157990">
+    <file name="ThisVar_Constraints.java">
+      <node id="7613513929795157990" at="17,32,18,31" concept="9" />
+      <node id="7613513929795157991" at="22,59,23,60" concept="9" />
+      <node id="7613513929795158347" at="26,40,27,20" concept="6" />
+      <node id="7613513929795157990" at="31,84,32,119" concept="5" />
+      <node id="7613513929795157991" at="32,119,33,61" concept="2" />
+      <node id="7613513929795157990" at="33,61,34,22" concept="6" />
+      <node id="7613513929795157990" at="38,0,39,0" concept="7" trace="ThisVar$Zb" />
+      <node id="7613513929795157990" at="42,0,43,0" concept="7" trace="name$MnvL" />
+      <node id="7613513929795157990" at="17,0,20,0" concept="1" trace="ThisVar_Constraints#()V" />
+      <node id="7613513929795157991" at="22,0,25,0" concept="1" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7613513929795157991" at="25,0,29,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="7613513929795157990" at="30,0,36,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7613513929795157990" at="17,32,18,31" />
+      <scope id="7613513929795157991" at="22,59,23,60" />
+      <scope id="7613513929795157994" at="26,40,27,20" />
+      <scope id="7613513929795157990" at="17,0,20,0" />
+      <scope id="7613513929795157991" at="22,0,25,0">
+        <var name="container" id="7613513929795157991" />
+      </scope>
+      <scope id="7613513929795157990" at="31,84,34,22">
+        <var name="properties" id="7613513929795157990" />
+      </scope>
+      <scope id="7613513929795157991" at="25,0,29,0">
+        <var name="node" id="7613513929795157991" />
+      </scope>
+      <scope id="7613513929795157990" at="30,0,36,0" />
+      <unit id="7613513929795157990" at="37,0,40,0" name="NewLanguage.constraints.ThisVar_Constraints$CONCEPTS" />
+      <unit id="7613513929795157990" at="41,0,44,0" name="NewLanguage.constraints.ThisVar_Constraints$PROPS" />
+      <unit id="7613513929795157991" at="21,0,30,0" name="NewLanguage.constraints.ThisVar_Constraints$Name_Property" />
+      <unit id="7613513929795157990" at="16,0,45,0" name="NewLanguage.constraints.ThisVar_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/7613513929802099680">
+    <file name="MethodDeclaration_Constraints.java">
+      <node id="7613513929802099680" at="22,42,23,41" concept="9" />
+      <node id="7613513929802099681" at="27,59,28,60" concept="9" />
+      <node id="7613513929802099681" at="31,109,32,99" concept="5" />
+      <node id="7613513929802099681" at="33,53,34,152" concept="2" />
+      <node id="7613513929802099681" at="35,7,36,20" concept="6" />
+      <node id="7613513929802103674" at="39,7,40,36" concept="5" />
+      <node id="7613513929802103674" at="40,36,41,63" concept="5" />
+      <node id="7613513929802105407" at="42,35,43,22" concept="6" />
+      <node id="7613513929802105821" at="45,7,46,19" concept="6" />
+      <node id="7613513929802099680" at="50,84,51,119" concept="5" />
+      <node id="7613513929802099681" at="51,119,52,61" concept="2" />
+      <node id="7613513929802099680" at="52,61,53,22" concept="6" />
+      <node id="7613513929802103676" at="55,0,56,0" concept="7" trace="REGEXP" />
+      <node id="7613513929802099680" at="58,0,59,0" concept="7" trace="MethodDeclaration$IE" />
+      <node id="7613513929802099680" at="62,0,63,0" concept="7" trace="name$MnvL" />
+      <node id="7613513929802099680" at="22,0,25,0" concept="1" trace="MethodDeclaration_Constraints#()V" />
+      <node id="7613513929802099681" at="27,0,30,0" concept="1" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7613513929802099681" at="32,99,35,7" concept="3" />
+      <node id="7613513929802103674" at="41,63,44,9" concept="3" />
+      <node id="7613513929802099680" at="49,0,55,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="7613513929802103674" at="38,85,45,7" concept="0" />
+      <node id="7613513929802099681" at="30,0,38,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="7613513929802099681" at="38,0,48,0" concept="8" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <scope id="7613513929802099680" at="22,42,23,41" />
+      <scope id="7613513929802099681" at="27,59,28,60" />
+      <scope id="7613513929802099681" at="33,53,34,152" />
+      <scope id="7613513929802103678" at="42,35,43,22" />
+      <scope id="7613513929802099680" at="22,0,25,0" />
+      <scope id="7613513929802099681" at="27,0,30,0">
+        <var name="container" id="7613513929802099681" />
+      </scope>
+      <scope id="7613513929802099680" at="50,84,53,22">
+        <var name="properties" id="7613513929802099680" />
+      </scope>
+      <scope id="7613513929802099681" at="31,109,36,20">
+        <var name="result" id="7613513929802099681" />
+      </scope>
+      <scope id="7613513929802103674" at="39,7,44,9">
+        <var name="_matcher_0" id="7613513929802103674" />
+        <var name="_pattern_0" id="7613513929802103674" />
+      </scope>
+      <scope id="7613513929802099680" at="49,0,55,0" />
+      <scope id="7613513929802099681" at="30,0,38,0">
+        <var name="checkingNodeContext" id="7613513929802099681" />
+        <var name="node" id="7613513929802099681" />
+        <var name="propertyValue" id="7613513929802099681" />
+      </scope>
+      <scope id="7613513929802099739" at="38,85,46,19" />
+      <scope id="7613513929802099681" at="38,0,48,0">
+        <var name="node" id="7613513929802099681" />
+        <var name="propertyValue" id="7613513929802099681" />
+      </scope>
+      <unit id="7613513929802099680" at="57,0,60,0" name="NewLanguage.constraints.MethodDeclaration_Constraints$CONCEPTS" />
+      <unit id="7613513929802099680" at="61,0,64,0" name="NewLanguage.constraints.MethodDeclaration_Constraints$PROPS" />
+      <unit id="7613513929802099681" at="26,0,49,0" name="NewLanguage.constraints.MethodDeclaration_Constraints$Name_Property" />
+      <unit id="7613513929802099680" at="21,0,65,0" name="NewLanguage.constraints.MethodDeclaration_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/7613513929814152365">
+    <file name="StructLiteral_Constraints.java">
+      <node id="7613513929814152365" at="18,38,19,37" concept="9" />
+      <node id="7613513929814152366" at="27,56,28,191" concept="6" />
+      <node id="7613513929814152365" at="30,6,31,131" concept="5" />
+      <node id="7613513929814152366" at="31,131,32,42" concept="2" />
+      <node id="7613513929814152365" at="32,42,33,22" concept="6" />
+      <node id="7613513929814152365" at="37,0,38,0" concept="7" trace="StructLiteral$6R" />
+      <node id="7613513929814152365" at="38,0,39,0" concept="7" trace="StructDeclaration$PO" />
+      <node id="7613513929814152365" at="42,0,43,0" concept="7" trace="structDec$1lPU" />
+      <node id="7613513929814152365" at="18,0,21,0" concept="1" trace="StructLiteral_Constraints#()V" />
+      <node id="7613513929814152366" at="25,0,30,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7613513929814152366" at="23,90,30,6" concept="5" />
+      <node id="7613513929814152365" at="22,0,35,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7613513929814152365" at="18,38,19,37" />
+      <scope id="7613513929814152366" at="27,56,28,191" />
+      <scope id="7613513929814152365" at="18,0,21,0" />
+      <scope id="7613513929814152366" at="25,0,30,0" />
+      <scope id="7613513929814152365" at="23,90,33,22">
+        <var name="d0" id="7613513929814152366" />
+        <var name="references" id="7613513929814152365" />
+      </scope>
+      <scope id="7613513929814152365" at="22,0,35,0" />
+      <unit id="7613513929814152365" at="41,0,44,0" name="NewLanguage.constraints.StructLiteral_Constraints$LINKS" />
+      <unit id="7613513929814152365" at="36,0,40,0" name="NewLanguage.constraints.StructLiteral_Constraints$CONCEPTS" />
+      <unit id="7613513929814152366" at="24,48,30,5" name="NewLanguage.constraints.StructLiteral_Constraints$1" />
+      <unit id="7613513929814152365" at="17,0,45,0" name="NewLanguage.constraints.StructLiteral_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/7613513929814153226">
+    <file name="CatchParameter_Constraints.java">
+      <node id="7613513929814153226" at="18,39,19,38" concept="9" />
+      <node id="7613513929814153227" at="27,56,28,190" concept="6" />
+      <node id="7613513929814153226" at="30,6,31,131" concept="5" />
+      <node id="7613513929814153227" at="31,131,32,42" concept="2" />
+      <node id="7613513929814153226" at="32,42,33,22" concept="6" />
+      <node id="7613513929814153226" at="37,0,38,0" concept="7" trace="CatchParameter$Pp" />
+      <node id="7613513929814153226" at="38,0,39,0" concept="7" trace="TraitDeclaration$N5" />
+      <node id="7613513929814153226" at="42,0,43,0" concept="7" trace="trait$WtoR" />
+      <node id="7613513929814153226" at="18,0,21,0" concept="1" trace="CatchParameter_Constraints#()V" />
+      <node id="7613513929814153227" at="25,0,30,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7613513929814153227" at="23,90,30,6" concept="5" />
+      <node id="7613513929814153226" at="22,0,35,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7613513929814153226" at="18,39,19,38" />
+      <scope id="7613513929814153227" at="27,56,28,190" />
+      <scope id="7613513929814153226" at="18,0,21,0" />
+      <scope id="7613513929814153227" at="25,0,30,0" />
+      <scope id="7613513929814153226" at="23,90,33,22">
+        <var name="d0" id="7613513929814153227" />
+        <var name="references" id="7613513929814153226" />
+      </scope>
+      <scope id="7613513929814153226" at="22,0,35,0" />
+      <unit id="7613513929814153226" at="41,0,44,0" name="NewLanguage.constraints.CatchParameter_Constraints$LINKS" />
+      <unit id="7613513929814153226" at="36,0,40,0" name="NewLanguage.constraints.CatchParameter_Constraints$CONCEPTS" />
+      <unit id="7613513929814153227" at="24,48,30,5" name="NewLanguage.constraints.CatchParameter_Constraints$1" />
+      <unit id="7613513929814153226" at="17,0,45,0" name="NewLanguage.constraints.CatchParameter_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:990720bc-e202-44f5-9c0f-d93b699e40ca(NewLanguage.constraints)/7613513929814153345">
+    <file name="TraitReference_Constraints.java">
+      <node id="7613513929814153345" at="18,39,19,38" concept="9" />
+      <node id="7613513929814153346" at="27,56,28,190" concept="6" />
+      <node id="7613513929814153345" at="30,6,31,131" concept="5" />
+      <node id="7613513929814153346" at="31,131,32,42" concept="2" />
+      <node id="7613513929814153345" at="32,42,33,22" concept="6" />
+      <node id="7613513929814153345" at="37,0,38,0" concept="7" trace="TraitReference$YD" />
+      <node id="7613513929814153345" at="38,0,39,0" concept="7" trace="TraitDeclaration$N5" />
+      <node id="7613513929814153345" at="42,0,43,0" concept="7" trace="trait$AxyP" />
+      <node id="7613513929814153345" at="18,0,21,0" concept="1" trace="TraitReference_Constraints#()V" />
+      <node id="7613513929814153346" at="25,0,30,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7613513929814153346" at="23,90,30,6" concept="5" />
+      <node id="7613513929814153345" at="22,0,35,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7613513929814153345" at="18,39,19,38" />
+      <scope id="7613513929814153346" at="27,56,28,190" />
+      <scope id="7613513929814153345" at="18,0,21,0" />
+      <scope id="7613513929814153346" at="25,0,30,0" />
+      <scope id="7613513929814153345" at="23,90,33,22">
+        <var name="d0" id="7613513929814153346" />
+        <var name="references" id="7613513929814153345" />
+      </scope>
+      <scope id="7613513929814153345" at="22,0,35,0" />
+      <unit id="7613513929814153345" at="41,0,44,0" name="NewLanguage.constraints.TraitReference_Constraints$LINKS" />
+      <unit id="7613513929814153345" at="36,0,40,0" name="NewLanguage.constraints.TraitReference_Constraints$CONCEPTS" />
+      <unit id="7613513929814153346" at="24,48,30,5" name="NewLanguage.constraints.TraitReference_Constraints$1" />
+      <unit id="7613513929814153345" at="17,0,45,0" name="NewLanguage.constraints.TraitReference_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

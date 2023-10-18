@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-7g1d72q6b1slbgk019xz2b8gup4fb13">
+  <files names="BreakStatement_Constraints.java:CatchParameter_Constraints.java:ConstraintsAspectDescriptor.java:ContinueStatement_Constraints.java:FieldAccessor_Constraints.java:FunctionReference_Constraints.java:MethodAccessor_Constraints.java:MethodDeclaration_Constraints.java:MethodImplementation_Constraints.java:StructLiteral_Constraints.java:ThisVar_Constraints.java:TraitReference_Constraints.java:VarReference_Constraints.java" />
+</product>
+
