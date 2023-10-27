@@ -20,7 +20,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class NumType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x80fd2975f5c34fe6L, 0xa787f3eac6fef3beL, 0x69a8a294c01651b0L, "NewLanguage.structure.NumType");
 
-  public static final SMethod<Object> castObject_id3B25F6$xs78 = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("castObject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("3B25F6$xs78").build(SMethodBuilder.createJavaParameter(Object.class, ""));
+  public static final SMethod<Object> castObject_id3B25F6$xs78 = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("castObject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4161913957869011400L).languageId(0xa787f3eac6fef3beL, 0x80fd2975f5c34fe6L).build2(SMethodBuilder.createJavaParameter(Object.class, ""));
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(castObject_id3B25F6$xs78);
 

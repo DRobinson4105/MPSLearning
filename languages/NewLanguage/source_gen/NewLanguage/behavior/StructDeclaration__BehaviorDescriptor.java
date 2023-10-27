@@ -27,8 +27,8 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class StructDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x80fd2975f5c34fe6L, 0xa787f3eac6fef3beL, 0x2170c9416229bf84L, "NewLanguage.structure.StructDeclaration");
 
-  public static final SMethod<Set<SNode>> getAllSuperTraits_id6ACCDiXcwvc = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("getAllSuperTraits").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("6ACCDiXcwvc").build();
-  public static final SMethod<List<SNode>> getMethodDeclarations_id2JUAheO2Fau = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getMethodDeclarations").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("2JUAheO2Fau").build();
+  public static final SMethod<Set<SNode>> getAllSuperTraits_id6ACCDiXcwvc = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("getAllSuperTraits").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7613513929782855628L).languageId(0xa787f3eac6fef3beL, 0x80fd2975f5c34fe6L).build2();
+  public static final SMethod<List<SNode>> getMethodDeclarations_id2JUAheO2Fau = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getMethodDeclarations").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3169013597712593566L).languageId(0xa787f3eac6fef3beL, 0x80fd2975f5c34fe6L).build2();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAllSuperTraits_id6ACCDiXcwvc, getMethodDeclarations_id2JUAheO2Fau);
 

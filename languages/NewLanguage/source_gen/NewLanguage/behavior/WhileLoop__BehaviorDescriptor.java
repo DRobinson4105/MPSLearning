@@ -23,7 +23,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class WhileLoop__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x80fd2975f5c34fe6L, 0xa787f3eac6fef3beL, 0x2f07de6465610090L, "NewLanguage.structure.WhileLoop");
 
-  public static final SMethod<Void> runB_id1lixMam2fw2 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("runB").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("1lixMam2fw2").build(SMethodBuilder.createJavaParameter(Frame.class, ""), SMethodBuilder.createJavaParameter(EvaluatorEnvironment.class, ""));
+  public static final SMethod<Void> runB_id1lixMam2fw2 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("runB").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1536439005502568450L).languageId(0xa787f3eac6fef3beL, 0x80fd2975f5c34fe6L).build2(SMethodBuilder.createJavaParameter(Frame.class, ""), SMethodBuilder.createJavaParameter(EvaluatorEnvironment.class, ""));
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runB_id1lixMam2fw2);
 

@@ -22,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ElseIf__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x80fd2975f5c34fe6L, 0xa787f3eac6fef3beL, 0x2170c941630b672cL, "NewLanguage.structure.ElseIf");
 
-  public static final SMethod<Void> run_id25KMk5z2Pug = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("run").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("25KMk5z2Pug").build(SMethodBuilder.createJavaParameter(Frame.class, ""), SMethodBuilder.createJavaParameter(EvaluatorEnvironment.class, ""));
+  public static final SMethod<Void> run_id25KMk5z2Pug = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("run").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2409647083314960272L).languageId(0xa787f3eac6fef3beL, 0x80fd2975f5c34fe6L).build2(SMethodBuilder.createJavaParameter(Frame.class, ""), SMethodBuilder.createJavaParameter(EvaluatorEnvironment.class, ""));
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(run_id25KMk5z2Pug);
 

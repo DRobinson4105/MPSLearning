@@ -20,8 +20,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ICallable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x80fd2975f5c34fe6L, 0xa787f3eac6fef3beL, 0x2e54952596b4e3eL, "NewLanguage.structure.ICallable");
 
-  public static final SMethod<List<SNode>> getParameters_idb_il9pqOXj = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getParameters").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).id("b_il9pqOXj").build();
-  public static final SMethod<Object> run_idb_il9pqOTB = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("run").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).id("b_il9pqOTB").build(SMethodBuilder.createJavaParameter(Frame.class, ""), SMethodBuilder.createJavaParameter(EvaluatorEnvironment.class, ""));
+  public static final SMethod<List<SNode>> getParameters_idb_il9pqOXj = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getParameters").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(208653575778946899L).languageId(0xa787f3eac6fef3beL, 0x80fd2975f5c34fe6L).build2();
+  public static final SMethod<Object> run_idb_il9pqOTB = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("run").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(208653575778946663L).languageId(0xa787f3eac6fef3beL, 0x80fd2975f5c34fe6L).build2(SMethodBuilder.createJavaParameter(Frame.class, ""), SMethodBuilder.createJavaParameter(EvaluatorEnvironment.class, ""));
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getParameters_idb_il9pqOXj, run_idb_il9pqOTB);
 

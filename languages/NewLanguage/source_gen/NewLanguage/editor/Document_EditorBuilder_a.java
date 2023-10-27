@@ -38,6 +38,16 @@ import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
+import javax.swing.JComponent;
+import NewLanguage.behavior.EvaluatorEnvironment;
+import NewLanguage.behavior.StatementBlock__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import NewLanguage.behavior.Frame;
+import NewLanguage.behavior.Callable;
+import NewLanguage.behavior.BudgetException;
+import NewLanguage.behavior.StructException;
+import com.intellij.ui.components.JBTextArea;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -76,6 +86,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createConstant_4());
     editorCell.addEditorCell(createRefNode_0());
     editorCell.addEditorCell(createConstant_5());
+    editorCell.addEditorCell(createCollection_1());
     return editorCell;
   }
   private EditorCell createProperty_0() {
@@ -449,6 +460,37 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
+  }
+  private EditorCell createCollection_1() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
+    editorCell.setCellId("Collection_7wjwco_l0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(createJComponent_0());
+    return editorCell;
+  }
+  private EditorCell createJComponent_0() {
+    EditorCell editorCell = EditorCell_Component.createComponentCell(getEditorContext(), myNode, _QueryFunction_JComponent_7wjwco_a0l0(), "JComponent_7wjwco_a11a");
+    editorCell.setCellId("JComponent_7wjwco_a11a_0");
+    return editorCell;
+  }
+  private JComponent _QueryFunction_JComponent_7wjwco_a0l0() {
+    EvaluatorEnvironment env = new EvaluatorEnvironment(10000);
+    String result = "";
+    try {
+      StatementBlock__BehaviorDescriptor.run_id1lixMam2gZ0.invoke(SLinkOperations.getTarget(myNode, LINKS.block$1Q8K), new Frame(as_m3mnh2_a0a1a0a0c0ab(null, Callable.class)), env);
+    } catch (BudgetException e) {
+      result = e.getMessage() + "\n\n";
+    } catch (StructException e) {
+      result = e.getMessage() + "\n\n";
+    }
+    result += env.getLog();
+
+    return new JBTextArea(result);
+  }
+  private static <T> T as_m3mnh2_a0a1a0a0c0ab(Object o, Class<T> type) {
+    return (type.isInstance(o) ? (T) o : null);
   }
 
   private static final class PROPS {

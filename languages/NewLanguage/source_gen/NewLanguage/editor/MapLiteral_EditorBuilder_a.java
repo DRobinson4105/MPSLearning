@@ -210,7 +210,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Constant_1yskak_a0a0a0a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
-    new LeftAngleBracketStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new LeftAngleBracketStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
@@ -340,7 +340,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
-    new RightAngleBracketStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new RightAngleBracketStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
@@ -362,6 +362,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     public List<TransformationMenuItem> createItems(final TransformationMenuContext ctx) {
       List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
       final SNode sourceNode = ctx.getNode();
+      EditorContext editorContext = ctx.getEditorContext();
       final Iterable<String> matchingTexts = new StringOrSequenceQuery() {
         public Object queryStringOrSequence() {
           return Sequence.<String>singleton("<");
@@ -373,12 +374,15 @@ import org.jetbrains.mps.openapi.language.SConcept;
           @Override
           public void execute(@NotNull String pattern) {
             final SNode sourceNode = ctx.getNode();
+            EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.MapLiteral$h9), LINKS.kType$hnxd, null);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
             return CONCEPTS.MapLiteral$h9;
           }
+
+
         });
       }
       return result;
@@ -389,7 +393,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Constant_1yskak_b0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
-    new LeftBraceStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new LeftBraceStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
@@ -493,7 +497,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Constant_1yskak_d0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-    new RightBraceStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new RightBraceStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

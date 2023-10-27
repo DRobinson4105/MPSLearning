@@ -40,7 +40,6 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.constraints.ConstraintsCanBeFacade;
 import jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
-import jetbrains.mps.smodel.presentation.NodePresentationUtil;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import com.mbeddr.mpsutil.grammarcells.runtime.SavedCaretPosition;
@@ -116,6 +115,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
                             return wrapper;
+                          }
+                          @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
                           }
                           @Override
                           public SAbstractConcept getOutputConcept() {
@@ -196,6 +200,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             return wrapper;
                           }
                           @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
+                          }
+                          @Override
                           public SAbstractConcept getOutputConcept() {
                             return outputConcept;
                           }
@@ -272,6 +281,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
                             return wrapper;
+                          }
+                          @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
                           }
                           @Override
                           public SAbstractConcept getOutputConcept() {
@@ -486,6 +500,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             return wrapper;
                           }
                           @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
+                          }
+                          @Override
                           public SAbstractConcept getOutputConcept() {
                             return outputConcept;
                           }
@@ -562,6 +581,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
                             return wrapper;
+                          }
+                          @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
                           }
                           @Override
                           public SAbstractConcept getOutputConcept() {
@@ -642,6 +666,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             return wrapper;
                           }
                           @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
+                          }
+                          @Override
                           public SAbstractConcept getOutputConcept() {
                             return outputConcept;
                           }
@@ -720,6 +749,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             return wrapper;
                           }
                           @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
+                          }
+                          @Override
                           public SAbstractConcept getOutputConcept() {
                             return outputConcept;
                           }
@@ -739,6 +773,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                 }
               }
             }
+          } finally {
+            _context.getEditorMenuTrace().popTraceInfo();
+          }
+          return ListSequence.fromList(result).where(new IWhereFilter<SubstituteMenuItem>() {
+            public boolean accept(SubstituteMenuItem it) {
+              return it != null;
+            }
+          }).toListSequence();
+        }
+      }.query()));
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+        public Iterable<SubstituteMenuItem> query() {
+          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "StructLiteral", new SNodePointer("r:527499a9-7de7-4cac-8dc4-1a7be839383b(NewLanguage.editor)", "3408889828235238415")));
+          try {
           } finally {
             _context.getEditorMenuTrace().popTraceInfo();
           }
@@ -796,6 +846,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
                             return wrapper;
+                          }
+                          @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
                           }
                           @Override
                           public SAbstractConcept getOutputConcept() {
@@ -874,6 +929,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
                             return wrapper;
+                          }
+                          @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
                           }
                           @Override
                           public SAbstractConcept getOutputConcept() {
@@ -1021,6 +1081,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             return wrapper;
                           }
                           @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
+                          }
+                          @Override
                           public SAbstractConcept getOutputConcept() {
                             return outputConcept;
                           }
@@ -1097,6 +1162,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
                             return wrapper;
+                          }
+                          @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
                           }
                           @Override
                           public SAbstractConcept getOutputConcept() {
@@ -1193,6 +1263,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             return wrapper;
                           }
                           @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
+                          }
+                          @Override
                           public SAbstractConcept getOutputConcept() {
                             return outputConcept;
                           }
@@ -1269,6 +1344,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
                             return wrapper;
+                          }
+                          @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
                           }
                           @Override
                           public SAbstractConcept getOutputConcept() {
@@ -1349,6 +1429,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             return wrapper;
                           }
                           @Override
+                          public String getDescriptionText(@NotNull String pattern) {
+                            String description = getOutputConcept().getShortDescription();
+                            return ((description != null && description.length() > 0) ? description : getOutputConcept().getName());
+                          }
+                          @Override
                           public SAbstractConcept getOutputConcept() {
                             return outputConcept;
                           }
@@ -1368,22 +1453,6 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                 }
               }
             }
-          } finally {
-            _context.getEditorMenuTrace().popTraceInfo();
-          }
-          return ListSequence.fromList(result).where(new IWhereFilter<SubstituteMenuItem>() {
-            public boolean accept(SubstituteMenuItem it) {
-              return it != null;
-            }
-          }).toListSequence();
-        }
-      }.query()));
-      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
-        public Iterable<SubstituteMenuItem> query() {
-          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
-          _context.getEditorMenuTrace().pushTraceInfo();
-          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "Comment", new SNodePointer("r:527499a9-7de7-4cac-8dc4-1a7be839383b(NewLanguage.editor)", "7613513929858186104")));
-          try {
           } finally {
             _context.getEditorMenuTrace().popTraceInfo();
           }
@@ -1425,25 +1494,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               try {
                 if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Expression$P$, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.FunctionCall$Kq, _context.getModel(), FunctionCall_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton("(");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -1513,25 +1579,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               try {
                 if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Expression$P$, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.Ternary$NT, _context.getModel(), Ternary_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton("?");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -1670,25 +1733,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               try {
                 if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.LExpression$8F, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.DecrementAfter$vl, _context.getModel(), DecrementAfter_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton("--");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -1758,25 +1818,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               try {
                 if (_context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.LExpression$8F, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.DecrementBefore$vO, _context.getModel(), DecrementBefore_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton("--");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -1846,25 +1903,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               try {
                 if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.LExpression$8F, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.IncrementAfter$un, _context.getModel(), IncrementAfter_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton("++");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -1934,25 +1988,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               try {
                 if (_context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.LExpression$8F, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.IncrementBefore$uQ, _context.getModel(), IncrementBefore_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton("++");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -2018,29 +2069,49 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
               List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
               _context.getEditorMenuTrace().pushTraceInfo();
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "StructLiteral", new SNodePointer("r:527499a9-7de7-4cac-8dc4-1a7be839383b(NewLanguage.editor)", "3408889828235238415")));
+              try {
+              } finally {
+                _context.getEditorMenuTrace().popTraceInfo();
+              }
+              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
+                public boolean accept(TransformationMenuItem it) {
+                  return it != null;
+                }
+              }).toListSequence();
+            }
+          }.query(_context)));
+        }
+      }
+      {
+        boolean sideEnabled = false;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
+        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
+        if (sideEnabled) {
+          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
+            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
+              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
+              _context.getEditorMenuTrace().pushTraceInfo();
               _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "DotExpression", new SNodePointer("r:527499a9-7de7-4cac-8dc4-1a7be839383b(NewLanguage.editor)", "7613513929782063117")));
               try {
                 if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Expression$P$, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.DotExpression$LX, _context.getModel(), DotExpression_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton(".");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -2156,25 +2227,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               try {
                 if (_context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.DataType$aP, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.TypeCast$5z, _context.getModel(), TypeCast_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton("(");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -2221,25 +2289,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                 }
                 if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.DataType$aP, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.TypeCast$5z, _context.getModel(), TypeCast_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton(")");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -2309,25 +2374,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               try {
                 if (_context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Expression$P$, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.TypeCast$5z, _context.getModel(), TypeCast_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton(")");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -2420,25 +2482,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               try {
                 if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Expression$P$, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.ValueAccess$72, _context.getModel(), ValueAccess_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton("[");
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -2508,11 +2567,10 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               try {
                 if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Expression$P$, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.BiExpression$YA, _context.getModel(), BiExpression_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
@@ -2526,15 +2584,13 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           }
                         });
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -2604,11 +2660,10 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               try {
                 if (_context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Expression$P$, null);
-
                   if (sourceNode != null) {
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
-                    SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
+                    final SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
                     for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.BiExpression$YA, _context.getModel(), BiExpression_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
@@ -2622,15 +2677,13 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           }
                         });
                         if (Sequence.fromIterable(matchingText).isNotEmpty()) {
+                          EditorContext editorContext = _context.getEditorContext();
                           boolean sideTransformationEnabled = ConstraintsCanBeFacade.checkCanBeParent(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           sideTransformationEnabled &= GrammarCellsUtil.canBeAncestor(SNodeOperations.getParent(sourceNode), subconcept, sourceNode.getContainmentLink());
                           sideTransformationEnabled &= ConstraintsCanBeFacade.checkCanBeChild(new ContainmentContext.Builder().parentNode(SNodeOperations.getParent(sourceNode)).childConcept(subconcept).link(sourceNode.getContainmentLink()).build()).isEmpty();
                           if (sideTransformationEnabled) {
                             ListSequence.fromList(result).addSequence(Sequence.fromIterable(new MultiTextActionItem(matchingText, _context) {
 
-                              public String getDescriptionText(String string) {
-                                return NodePresentationUtil.descriptionText(subconcept);
-                              }
                               @Override
                               public void execute(@NotNull String pattern) {
                                 doSubstitute(_context.getEditorContext(), pattern);
@@ -2687,29 +2740,6 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
           }.query(_context)));
         }
       }
-      {
-        boolean sideEnabled = false;
-        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
-        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
-        if (sideEnabled) {
-          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
-            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
-              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
-              _context.getEditorMenuTrace().pushTraceInfo();
-              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "Comment", new SNodePointer("r:527499a9-7de7-4cac-8dc4-1a7be839383b(NewLanguage.editor)", "7613513929858186104")));
-              try {
-              } finally {
-                _context.getEditorMenuTrace().popTraceInfo();
-              }
-              return ListSequence.fromList(result).where(new IWhereFilter<TransformationMenuItem>() {
-                public boolean accept(TransformationMenuItem it) {
-                  return it != null;
-                }
-              }).toListSequence();
-            }
-          }.query(_context)));
-        }
-      }
     } finally {
       _context.getEditorMenuTrace().popTraceInfo();
     }
@@ -2751,10 +2781,6 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         if (matcher.matches(elementsBefore, beforeMatchers, false, null) && matcher.matches(elementsAfter, afterMatchers, false, null)) {
 
           ListSequence.fromList(result).addElement(new MultiTextSubsituteAction(_context.getParentNode(), matchingText) {
-            public String getDescriptionText(String pattern) {
-              String shortDescription = subconcept.getShortDescription();
-              return (shortDescription != null ? shortDescription : subconcept.getName());
-            }
             @Override
             protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
               SNode newNode = SNodeFactoryOperations.createNewNode(subconcept, null);
@@ -2779,6 +2805,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             public SNode getOutputConcept() {
               return SNodeOperations.asNode(subconcept);
             }
+
           });
         }
       }

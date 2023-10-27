@@ -23,7 +23,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IHasCondition__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x80fd2975f5c34fe6L, 0xa787f3eac6fef3beL, 0x69a8a294bd8f8a38L, "NewLanguage.structure.IHasCondition");
 
-  public static final SMethod<Boolean> computeCondition_id6ACCDiXzUcQ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("computeCondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("6ACCDiXzUcQ").build(SMethodBuilder.createJavaParameter(Frame.class, ""), SMethodBuilder.createJavaParameter(EvaluatorEnvironment.class, ""));
+  public static final SMethod<Boolean> computeCondition_id6ACCDiXzUcQ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("computeCondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7613513929788990262L).languageId(0xa787f3eac6fef3beL, 0x80fd2975f5c34fe6L).build2(SMethodBuilder.createJavaParameter(Frame.class, ""), SMethodBuilder.createJavaParameter(EvaluatorEnvironment.class, ""));
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(computeCondition_id6ACCDiXzUcQ);
 

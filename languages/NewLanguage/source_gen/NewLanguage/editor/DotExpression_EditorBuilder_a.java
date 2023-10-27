@@ -398,7 +398,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
       Style style = new StyleImpl();
       if (_StyleParameter_QueryFunction_t2jtrp_a0a3a()) {
-        new FieldStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+        new FieldStyleClass(this).apply(style, editorCell);
       }
       editorCell.getStyle().putAll(style);
     }

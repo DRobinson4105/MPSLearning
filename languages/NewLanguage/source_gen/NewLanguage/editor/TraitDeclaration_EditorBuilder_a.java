@@ -185,6 +185,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     public List<TransformationMenuItem> createItems(final TransformationMenuContext ctx) {
       List<TransformationMenuItem> items = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
       final SNode sourceNode = ctx.getNode();
+      EditorContext editorContext = ctx.getEditorContext();
       final Iterable<String> matchingTexts = new StringOrSequenceQuery() {
         public Object queryStringOrSequence() {
           return Sequence.<String>singleton("extends");
@@ -200,6 +201,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
           }
           public SNode doSubstitute(@NotNull String pattern) {
             SNode result = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(ctx.getNode(), CONCEPTS.TraitDeclaration$N5), LINKS.parentTraits$7MES)).insertElement(0, SNodeFactoryOperations.createNewNode(CONCEPTS.TraitReference$YD, null));
+            EditorContext editorContext = ctx.getEditorContext();
 
             return result;
           }
@@ -207,6 +209,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
           public SAbstractConcept getOutputConcept() {
             return CONCEPTS.TraitDeclaration$N5;
           }
+
+
         });
       }
       return items;
@@ -236,7 +240,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
           for (EditorCell child : Sequence.fromIterable(GrammarCellsUtil.getUnwrappedChildren(collection))) {
             if (Objects.equals(child.getSNode().getContainmentLink(), LINKS.parentTraits$7MES)) {
               final String parentCellId = collection.getCellId();
-              CompositeTransformationMenuLookup.filter(child, (TransformationMenuLookup l) -> !((l instanceof ListInsertActionLookup && Objects.equals(((ListInsertActionLookup) l).getSourceCellId(), parentCellId))));
+              CompositeTransformationMenuLookup.filter(child, (TransformationMenuLookup l) -> !(l instanceof ListInsertActionLookup && Objects.equals(((ListInsertActionLookup) l).getSourceCellId(), parentCellId)));
               String description = "Insert child into " + child.getSNode().getContainmentLink();
               SNodeReference trace = new SNodePointer("r:527499a9-7de7-4cac-8dc4-1a7be839383b(NewLanguage.editor)", "7613513929782230168");
               _FunctionTypes._void_P1_E0<? super SNode> postprocessor = null;
@@ -364,7 +368,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "{");
     editorCell.setCellId("Constant_sp56ww_e0a");
     Style style = new StyleImpl();
-    new LeftBraceStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new LeftBraceStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
@@ -458,7 +462,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Constant_sp56ww_g0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
-    new RightBraceStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new RightBraceStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

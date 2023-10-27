@@ -21,7 +21,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class BE_MultiplyAssign__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x80fd2975f5c34fe6L, 0xa787f3eac6fef3beL, 0x2170c94162fc8ebeL, "NewLanguage.structure.BE_MultiplyAssign");
 
-  public static final SMethod<SConcept> implementingConcept_idb_il9oY5c9 = new SMethodBuilder<SConcept>(new SJavaCompoundTypeImpl((Class<SConcept>) ((Class) Object.class))).name("implementingConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).id("b_il9oY5c9").build();
+  public static final SMethod<SConcept> implementingConcept_idb_il9oY5c9 = new SMethodBuilder<SConcept>(new SJavaCompoundTypeImpl((Class<SConcept>) ((Class) Object.class))).name("implementingConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(208653575771411209L).languageId(0xa787f3eac6fef3beL, 0x80fd2975f5c34fe6L).build2();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(implementingConcept_idb_il9oY5c9);
 

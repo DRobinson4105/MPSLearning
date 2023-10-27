@@ -3,13 +3,13 @@ plugins {
 }
 
 repositories {
-    maven(url = "https://projects.itemis.de/nexus/content/repositories/mbeddr")
+    maven(url = "https://artifacts.itemis.cloud/repository/maven-mps/")
     mavenCentral()
 }
 
 
 dependencies {
-   "mps"("com.jetbrains:mps:2021.3.3")
-   "generation"("de.itemis.mps:extensions:2021.3.+")
+   "mps"("com.jetbrains:mps:2022.3.+")
+   "generation"("de.itemis.mps:extensions:2022.3.+")
 
 }
